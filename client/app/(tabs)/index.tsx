@@ -11,11 +11,13 @@ import Header from '@/components/Header';
 import Section from '@/components/custom tags/Section';
 import { Ionicons } from '@expo/vector-icons';
 import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import SafeAreaMain from '@/components/SafeAreaMain';
 
 export default function HomeScreen() {
 
   const FilterSection = () =>{
     return(
+
       <Section>
         <Main>
           <View className=' flex flex-row justify-between '>
@@ -77,13 +79,13 @@ export default function HomeScreen() {
   }
 
   return (
-    <SafeAreaView className='background flex-1 '>
+    <SafeAreaMain >
       <ScrollView showsVerticalScrollIndicator={false}>
         <Header/>
         <FilterSection/>
         <Category/>
         <VenuesSection/>
       </ScrollView>
-    </SafeAreaView>
+    </SafeAreaMain>
   );
 }

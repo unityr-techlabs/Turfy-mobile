@@ -11,12 +11,13 @@ import { AntDesign, Feather, FontAwesome, FontAwesome6, Ionicons, MaterialCommun
 import TabBar from '@/components/TabBar';
 import View from '@/components/custom tags/View';
 import Header from '@/components/Header';
+import SafeAreaMain from '@/components/SafeAreaMain';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <View className='flex-1 background'>
+    
       <Tabs
           screenOptions={{
             headerShown: false,
@@ -68,6 +69,6 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
-    </View>
+   
   );
 }
