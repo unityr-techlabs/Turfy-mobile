@@ -18,7 +18,8 @@ export default function TabLayout() {
 
   return (
     
-      <Tabs
+      <View className='background flex-1'>
+        <Tabs
           screenOptions={{
             headerShown: false,
           }}
@@ -69,6 +70,7 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+      </View>
    
   );
 }
