@@ -14,6 +14,7 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-nat
 import SafeAreaMain from '@/components/SafeAreaMain';
 import Line from '@/components/Line';
 import { useState } from 'react';
+import { router, useNavigation } from 'expo-router';
 
 export default function HomeScreen() {
 
@@ -149,7 +150,9 @@ export default function HomeScreen() {
             <Line/>
             <View className='flex flex-row justify-between items-center'>
               <Text className=' heading flex flex-row items-center' type='heading'>Rs. 800 <Text className=' capitalize text-xs paragraph'>/ hour</Text> </Text>
-              <Text className=' text-primary-default capitalize'>open now</Text>
+              <TouchableOpacity onPress={()=>router.navigate('(stack)/venue/1')}>
+                <Text className=' text-primary-default capitalize'>open now</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
