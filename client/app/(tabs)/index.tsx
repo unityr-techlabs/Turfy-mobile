@@ -32,7 +32,7 @@ export default function HomeScreen() {
     const AdBox = () =>{
       return(
           <Image
-            source={require('../../assets/images/dummy.jpg')}
+            source={require('@/assets/images/cricket.png')}
             style={{width:wp(100)}}
             className=' w-full h-full '
             />
@@ -134,7 +134,7 @@ export default function HomeScreen() {
       return(
         <View className='extraground rounded-3xl'>
           <View className='w-full h-48  relative overflow-hidden'> 
-            <Image source={require('../../assets/images/dummy.jpg')} className=' w-full h-full absolute top-0 rounded-t-xl'
+            <Image source={require('@/assets/images/football.jpg')} className=' w-full h-full absolute top-0 rounded-t-xl'
                 width={wp(100)}/>
           </View>
           <View className=' p-6 gap-4'>
