@@ -101,13 +101,6 @@ export default function TabTwoScreen() {
   )
  
  }
- 
-  
- 
-
-
-
- 
   return (
     <SafeAreaMain>
       <ScrollView  showsVerticalScrollIndicator={false}>
